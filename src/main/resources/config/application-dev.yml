@@ -74,7 +74,7 @@ spring:
     cache: false
 
 server:
-  port: 8081
+  port: 8082
   # make sure requests the proxy uri instead of the server one
   forward-headers-strategy: native
 
