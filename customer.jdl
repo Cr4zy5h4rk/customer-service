@@ -1,0 +1,15 @@
+entity Customer {
+  firstName String required
+  lastName String required
+  email String required
+}
+
+entity Address {
+  street String
+  city String
+  country String
+}
+
+relationship OneToMany {
+  Customer to Address
+}

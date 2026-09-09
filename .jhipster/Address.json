@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20260908130637"
+  },
+  "applications": ["*"],
+  "clientRootFolder": "customer",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "street",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "customer",
+  "name": "Address",
+  "relationships": [
+    {
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "address",
+      "relationshipName": "customer",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ]
+}
