@@ -123,7 +123,7 @@ spring:
     group:
       dev:
         - secret-samples
-        - kafka
+        #- kafka
         - api-docs
         # Uncomment to activate TLS for the dev profile
         #- tls
