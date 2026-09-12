@@ -15,7 +15,7 @@
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
     com.silverhand.customer: DEBUG
@@ -59,7 +59,7 @@ spring:
       port: 8500
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/customer
+    url: jdbc:postgresql://localhost:5434/customer
     hikari:
       poolName: Hikari
       auto-commit: false
