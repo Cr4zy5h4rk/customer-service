@@ -3,6 +3,7 @@
 node {
     stage('checkout') {
         checkout scm
+        sh 'chmod +x mvnw'
     }
 
     stage('check java') {
