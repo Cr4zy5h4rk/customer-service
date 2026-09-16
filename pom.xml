@@ -740,7 +740,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>customer:latest</image>
+                            <image>docker.io/cr4zy5h4rk/customer-service:latest</image>
                         </to>
                         <container>
                             <entrypoint>
