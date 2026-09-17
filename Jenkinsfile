@@ -34,7 +34,7 @@ node {
 
     stage('publish docker') {
         withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-            sh "./mvnw -ntp -Pprod verify jib:build -Djib.to.auth.username=$DOCKER_USER -Djib.to.auth.password=$DOCKER_PASS"
+            sh "./mvnw -ntp -Pprod verify jib:build -Djib.to.image=docker.io/tonuser/customer-service:${env.BUILD_NUMBER} -Djib.to.auth.username=$DOCKER_USER -Djib.to.auth.password=$DOCKER_PASS"
         }
     }
 }
