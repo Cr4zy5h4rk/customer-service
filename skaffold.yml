@@ -1,0 +1,21 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: cr4zy5h4rk/catalog-service
+      context: ../catalog
+      jib: {}
+    - image: cr4zy5h4rk/customer-service
+      context: ../customer
+      jib: {}
+    - image: cr4zy5h4rk/gateway-service
+      context: ../gateway
+      jib: {}
+    - image: cr4zy5h4rk/order-service
+      context: ../order
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: '{{.IMAGE_NAME}}:latest'
+deploy:
+  kustomize: {}
