@@ -116,7 +116,7 @@
     "axios": "1.19.0",
     "browser-sync": "3.0.4",
     "browser-sync-webpack-plugin": "2.4.0",
-    "concurrently": "10.0.5",
+    "concurrently": "10.0.6",
     "copy-webpack-plugin": "14.0.0",
     "eslint": "10.9.1",
     "eslint-config-prettier": "10.1.8",
